@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breeze Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="admin-topbar">
+  <div>
+    <span>ADMIN DASHBOARD</span>
+    <h2>Breeze Admin</h2>
+  </div>
+
+  <button class="admin-menu-toggle" id="adminMenuToggle">
+    ☰
+  </button>
+</header>
+
+<div class="admin-menu-overlay" id="adminMenuOverlay"></div>
+
+<aside class="admin-slide-menu" id="adminSlideMenu">
+  <button class="admin-close-btn" id="adminCloseMenu">×</button>
+
+  <span>BREEZE</span>
+
+  
+  <button class="admin-menu-link tab-btn" data-tab="menu">Menu</button>
+  <button class="admin-menu-link tab-btn" data-tab="messages">Messages</button>
+  <button class="admin-menu-link tab-btn" data-tab="reservations">Reservations</button>
+  <button class="admin-menu-link tab-btn" data-tab="gallery">Gallery</button>
+
+<button class="admin-menu-link tab-btn" data-tab="settings">
+  Settings
+</button>
+  <button class="admin-menu-link" id="logoutBtn">Logout</button>
+</aside>
+
+<main class="admin-main">
+
+  
+  <div id="menu" class="admin-tab-content" style="display:none;">
+    <h2>Menu Management</h2>
+
+    <div class="review-form">
+      <input type="text" id="itemName" placeholder="Item Name">
+      <input type="text" id="itemPrice" placeholder="Price e.g. ₹199">
+      <input type="text" id="itemCategory" placeholder="Category e.g. Coffee, Pizza">
+      <textarea id="itemDescription" placeholder="Description"></textarea>
+      <button class="btn" id="addMenuBtn">Add Menu Item</button>
+    </div>
+
+    <br><br>
+    <div class="review-cards" id="menuItems"></div>
+  </div>
+
+  <div id="messages" class="admin-tab-content" style="display:none;">
+    <h2>Customer Messages</h2>
+    <div class="review-cards" id="messagesList"></div>
+  </div>
+
+<div id="reservations" class="admin-tab-content" style="display:none;">
+  <h2>Table Reservations</h2>
+  <div class="review-cards" id="reservationsList"></div>
+</div>
+
+
+<div id="gallery" class="admin-tab-content" style="display:none;">
+  <h2>Gallery Management</h2>
+
+  <div class="review-form">
+    <input type="file" id="galleryImageInput" accept="image/*">
+
+    <button class="btn" id="uploadGalleryBtn">
+      Upload Image
+    </button>
+  </div>
+
+  <br><br>
+
+  <div class="review-cards" id="adminGalleryImages"></div>
+</div>
+
+<div id="settings" class="admin-tab-content" style="display:none;">
+  <h2>Website Settings</h2>
+
+  <div class="review-card">
+    <h3>Admin Settings</h3>
+    <p>
+      Website title, phone number,
+      address and social links.
+    </p>
+
+    <button class="btn">
+      Coming Soon
+    </button>
+  </div>
+</div>
+
+</main>
+
+<script type="module" src="../js/admin.js"></script>
+
+</body>
+</html>
