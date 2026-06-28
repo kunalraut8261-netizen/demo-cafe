@@ -1042,14 +1042,41 @@ footer {
 }
 
 
-.reservation-section{
-  background:
-  linear-gradient(rgba(20,20,20,.75),rgba(20,20,20,.75)),
-  url("../images/cafe-bg.jpg");
+/* ===========================
+   PREMIUM RESERVATION SECTION
+=========================== */
 
-  background-size:cover;
-  background-position:center;
-  padding:120px 8%;
+.reservation-section{
+
+    position:relative;
+
+    padding:120px 8%;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,255,255,.05) 0%,
+    transparent 28%),
+
+    radial-gradient(circle at bottom right,
+    rgba(255,255,255,.04) 0%,
+    transparent 30%),
+
+    repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,.018) 0px,
+    rgba(255,255,255,.018) 2px,
+    transparent 2px,
+    transparent 8px),
+
+    linear-gradient(
+    135deg,
+    #5c0012 0%,
+    #7f0017 30%,
+    #9a001b 60%,
+    #C00020 100%);
+
 }
 
 .reservation-container{
@@ -1111,12 +1138,22 @@ footer {
 }
 
 .reservation-form{
-  background:rgba(255,255,255,.05);
-  backdrop-filter:blur(18px);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:30px;
-  padding:40px;
-  box-shadow:0 25px 80px rgba(0,0,0,.35);
+
+    background:rgba(18,18,18,.45);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
+
 }
 
 

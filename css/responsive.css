@@ -222,6 +222,24 @@
   }
 }
 
+
+/* Reservation Mobile Background */
+
+.reservation-section{
+
+    padding:80px 6%;
+
+    background:
+    linear-gradient(
+    180deg,
+    #6b0015,
+    #8d0019,
+    #C00020);
+
+}
+
+
+
 @media (max-width: 480px) {
 
   .hero-left h1 {
