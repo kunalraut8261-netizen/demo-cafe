@@ -265,3 +265,23 @@
     height: 290px;
   }
 }
+
+
+
+/* ===== Reservation Form Mobile Fix ===== */
+@media(max-width:700px){
+  .reservation-form{
+    grid-template-columns:1fr;
+    padding:35px 24px;
+    border-radius:26px;
+  }
+
+  .reservation-form textarea,
+  .reservation-form .btn{
+    grid-column:span 1;
+  }
+
+  .reservation-form .btn{
+    justify-self:center;
+  }
+}

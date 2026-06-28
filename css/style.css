@@ -1137,23 +1137,78 @@ footer {
   color:white;
 }
 
+/* ===== Reservation Form Card - Premium Login Style ===== */
 .reservation-form{
+  position: relative;
+  max-width: 620px;
+  margin: auto;
+  padding: 55px 45px;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 32px;
+  box-shadow: 0 25px 70px rgba(0,0,0,.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  overflow: hidden;
+}
 
-    background:rgba(18,18,18,.45);
+/* Bottom corner design */
+.reservation-form::after{
+  content:"";
+  position:absolute;
+  right:-45px;
+  bottom:-45px;
+  width:170px;
+  height:170px;
+  background: linear-gradient(135deg,#27b6f6 0%,#27b6f6 45%,#ffe44d 45%,#ffe44d 70%,#16b545 70%);
+  border-radius: 50%;
+}
 
-    backdrop-filter:blur(18px);
+/* Inputs */
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea{
+  width:100%;
+  padding:18px 20px;
+  background:#fff;
+  color:#111;
+  border:2px solid #d9dce2;
+  border-radius:12px;
+  outline:none;
+  font-size:15px;
+  position:relative;
+  z-index:2;
+}
 
-    -webkit-backdrop-filter:blur(18px);
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus{
+  border-color:#111;
+}
 
-    border:1px solid rgba(255,255,255,.08);
+/* Message box */
+.reservation-form textarea{
+  grid-column:span 2;
+  height:130px;
+  resize:none;
+}
 
-    border-radius:28px;
+/* Button */
+.reservation-form .btn{
+  grid-column:span 2;
+  justify-self:end;
+  background:#15171d;
+  color:#fff;
+  padding:16px 34px;
+  border-radius:30px;
+  position:relative;
+  z-index:2;
+}
 
-    padding:40px;
-
-    box-shadow:
-    0 20px 60px rgba(0,0,0,.35);
-
+.reservation-form .btn:hover{
+  background:#d5a253;
+  color:#111;
 }
 
 
