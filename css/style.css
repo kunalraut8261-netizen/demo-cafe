@@ -787,6 +787,16 @@ footer {
   flex-shrink: 0;
 }
 
+
+
+.info-icon img{
+  width:32px;
+  height:32px;
+  object-fit:contain;
+}
+
+
+
 .info-box h3 {
   font-family: Georgia, serif;
   font-size: 30px;
