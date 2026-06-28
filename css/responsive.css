@@ -403,3 +403,35 @@ font-size:28px;
 }
 
 }
+
+
+
+
+/* ===============================
+   RESERVATION MOBILE FIX
+================================ */
+
+@media(max-width:600px){
+
+  .reservation-section{
+    padding:80px 6%;
+  }
+
+  .reservation-box{
+    padding:45px 24px;
+    border-radius:24px;
+  }
+
+  .reservation-box h2{
+    font-size:42px;
+  }
+
+  .reservation-text{
+    font-size:16px;
+  }
+
+  .reservation-main-btn{
+    width:100%;
+    padding:16px;
+  }
+}
