@@ -378,3 +378,28 @@
     }
 
 }
+
+
+
+
+/* ===========================
+   Reservation Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.reservation-form{
+
+padding:30px 22px;
+
+border-radius:18px;
+
+}
+
+.reservation-form h3{
+
+font-size:28px;
+
+}
+
+}

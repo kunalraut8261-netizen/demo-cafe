@@ -207,56 +207,64 @@
 
 <section class="reservation-section" id="reservation">
 
-  <!-- =========================================
-     QR RESERVATION CARD START
-========================================= -->
+  <!-- =========================
+     SIMPLE RESERVATION FORM
+========================= -->
 
 <div class="reservation-form">
 
-    <div class="reservation-card">
+    <h3>Reserve Your Table</h3>
 
-        <div class="reservation-icon">
-            <i class="fa-solid fa-calendar-check"></i>
-        </div>
+    <p>
+        Fill in your details and we'll get back to you shortly.
+    </p>
 
-        <h3>Reserve Your Table</h3>
+    <input
+    type="text"
+    id="resName"
+    placeholder="Your Name">
 
-        <div class="gold-line"></div>
+    <input
+    type="email"
+    id="resEmail"
+    placeholder="Your Email">
 
-        <p>
-            Scan the QR code below to fill out
-            the reservation form instantly.
-        </p>
+    <input
+    type="tel"
+    id="resPhone"
+    placeholder="Phone Number">
 
-        <a href="https://form.jotform.com/261781539510459" target="_blank">
+    <input
+    type="date"
+    id="resDate">
 
-            <img
-            src="https://www.jotform.com/uploads/data589rows/form_files/261781539510459_1782634165_qrcode_muse.png"
-            alt="Reservation QR"
-            class="reservation-qr">
+    <input
+    type="time"
+    id="resTime">
 
-        </a>
+    <select id="resGuests">
 
-        <a
-        href="https://form.jotform.com/261781539510459"
-        target="_blank"
-        class="reservation-btn">
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>4 Guests</option>
+        <option>6 Guests</option>
+        <option>8+ Guests</option>
 
-            Open Reservation Form
+    </select>
 
-        </a>
+    <textarea
+    id="resMessage"
+    placeholder="Special Request"></textarea>
 
-        <small>
-            Secure online reservation powered by Jotform
-        </small>
+    <button
+    class="reservation-btn"
+    onclick="bookTable()">
 
-    </div>
+        Reserve Table
+
+    </button>
 
 </div>
-
-<!-- =========================================
-     QR RESERVATION CARD END
-========================================= -->
 
 </section>
 
