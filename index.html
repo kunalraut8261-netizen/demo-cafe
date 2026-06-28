@@ -205,27 +205,44 @@
 
 
 
+
 <!-- ================= RESERVATION SECTION START ================= -->
 <section class="reservation-section" id="reservation">
 
   <div class="reservation-box">
 
-    <!-- Section Heading -->
     <span class="reservation-subtitle">RESERVATION</span>
 
     <h2>Book Your Table</h2>
 
     <p class="reservation-text">
-      Reserve your table and enjoy a premium rooftop cafe experience.
+      Fill in your details and we will confirm your reservation shortly.
     </p>
 
-    <!-- Reservation Button -->
-    <a
-      href="https://form.jotform.com/261781539510459"
-      target="_blank"
-      class="reservation-main-btn">
-      Open Reservation Form
-    </a>
+    <!-- FIREBASE RESERVATION FORM -->
+    <div class="reservation-form">
+
+      <input type="text" id="resName" placeholder="Your Name">
+      <input type="email" id="resEmail" placeholder="Your Email">
+      <input type="tel" id="resPhone" placeholder="Phone Number">
+      <input type="date" id="resDate">
+      <input type="time" id="resTime">
+
+      <select id="resGuests">
+        <option value="1 Guest">1 Guest</option>
+        <option value="2 Guests">2 Guests</option>
+        <option value="4 Guests">4 Guests</option>
+        <option value="6 Guests">6 Guests</option>
+        <option value="8+ Guests">8+ Guests</option>
+      </select>
+
+      <textarea id="resMessage" placeholder="Special Request"></textarea>
+
+      <button class="reservation-submit-btn" onclick="bookTable()">
+        Reserve Table
+      </button>
+
+    </div>
 
   </div>
 
