@@ -1046,6 +1046,10 @@ footer {
    PREMIUM RESERVATION SECTION
 =========================== */
 
+/* =====================================
+   PREMIUM RESERVATION BACKGROUND
+===================================== */
+
 .reservation-section{
 
     position:relative;
@@ -1056,28 +1060,46 @@ footer {
 
     background:
     radial-gradient(circle at top left,
-    rgba(255,255,255,.05) 0%,
-    transparent 28%),
+    rgba(255,255,255,.08) 0%,
+    transparent 35%),
 
     radial-gradient(circle at bottom right,
-    rgba(255,255,255,.04) 0%,
-    transparent 30%),
-
-    repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,.018) 0px,
-    rgba(255,255,255,.018) 2px,
-    transparent 2px,
-    transparent 8px),
+    rgba(255,255,255,.05) 0%,
+    transparent 35%),
 
     linear-gradient(
     135deg,
-    #5c0012 0%,
-    #7f0017 30%,
-    #9a001b 60%,
-    #C00020 100%);
+    #43000d 0%,
+    #650014 30%,
+    #85001a 60%,
+    #a3001d 100%);
 
 }
+
+
+
+/* Background texture */
+
+.reservation-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
+
+    background-size:24px 24px;
+
+    opacity:.45;
+
+    pointer-events:none;
+
+}
+
+
 
 .reservation-container{
   max-width:1400px;
@@ -1095,18 +1117,25 @@ footer {
 }
 
 .reservation-left h2{
-  font-size:80px;
-  line-height:1;
-  font-family:Georgia,serif;
-  color:#fff;
+
+    color:#ffffff;
+
+    font-size:72px;
+
+    line-height:1;
+
 }
 
 .reservation-left p{
-  font-size:20px;
-  color:#e4e4e4;
-  max-width:500px;
-  line-height:1.8;
+
+    color:rgba(255,255,255,.88);
+
+    font-size:20px;
+
+    line-height:1.8;
+
 }
+
 
 .reservation-info{
   margin-top:50px;
@@ -1121,11 +1150,17 @@ footer {
 }
 
 .reservation-info div{
-  background:rgba(255,255,255,.05);
-  padding:20px;
-  border-radius:20px;
-  min-width:180px;
-  border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:18px;
+
+    padding:20px;
+
 }
 
 .reservation-info h4{
