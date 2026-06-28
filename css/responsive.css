@@ -315,14 +315,14 @@
 
   /* PNG icon size कमी */
   .info-icon img{
-    width: 26px;
-    height: 26px;
+    width: 23px;
+    height: 23px;
     object-fit: contain;
   }
 
   /* Heading size कमी */
   .info-box h3{
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1.1;
     margin-bottom: 6px;
   }
