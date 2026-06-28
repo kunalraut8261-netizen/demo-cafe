@@ -1479,28 +1479,23 @@ footer {
 
 }
 
-.reservation-btn{
-
-    width:100%;
-
-    padding:17px;
-
-    border:none;
-
-    background:#C00020;
-
-    color:#fff;
-
-    border-radius:10px;
-
-    font-size:16px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
+/* FORM SUBMIT BUTTON ONLY */
+.reservation-submit-btn{
+  width:100%;
+  padding:17px;
+  border:none;
+  background:#C00020;
+  color:#fff;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
 }
 
+.reservation-submit-btn:hover{
+  background:#8d0018;
+}
 .reservation-btn:hover{
 
     background:#8d0018;
