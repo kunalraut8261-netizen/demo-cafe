@@ -334,3 +334,47 @@
   }
 
 }
+
+
+
+/* ===================================
+   QR RESERVATION MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .reservation-card{
+
+        padding:30px 22px;
+
+        border-radius:24px;
+
+    }
+
+    .reservation-card h3{
+
+        font-size:34px;
+
+    }
+
+    .reservation-card p{
+
+        font-size:16px;
+
+    }
+
+    .reservation-qr{
+
+        width:180px;
+
+    }
+
+    .reservation-btn{
+
+        width:100%;
+
+        padding:16px;
+
+    }
+
+}

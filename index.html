@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -204,75 +207,56 @@
 
 <section class="reservation-section" id="reservation">
 
-  <div class="reservation-container">
+  <!-- =========================================
+     QR RESERVATION CARD START
+========================================= -->
 
-    <div class="reservation-left">
+<div class="reservation-form">
 
-      <span>RESERVATION</span>
+    <div class="reservation-card">
 
-
-      <div class="reservation-badge">
-      ★ Premium Rooftop Dining Experience
-      </div>
-
-      <h2>
-        Reserve Your
-        Experience
-      </h2>
-
-      <p>
-        Enjoy rooftop vibes, premium food,
-        handcrafted beverages and unforgettable evenings.
-      </p>
-
-      <div class="reservation-info">
-        <div>
-          <h4>📞 Call</h4>
-          <p>+91 1234568785</p>
+        <div class="reservation-icon">
+            <i class="fa-solid fa-calendar-check"></i>
         </div>
 
-        <div>
-          <h4>🕒 Timing</h4>
-          <p>11 AM - 11 PM</p>
-        </div>
-      </div>
+        <h3>Reserve Your Table</h3>
+
+        <div class="gold-line"></div>
+
+        <p>
+            Scan the QR code below to fill out
+            the reservation form instantly.
+        </p>
+
+        <a href="https://form.jotform.com/261781539510459" target="_blank">
+
+            <img
+            src="https://www.jotform.com/uploads/data589rows/form_files/261781539510459_1782634165_qrcode_muse.png"
+            alt="Reservation QR"
+            class="reservation-qr">
+
+        </a>
+
+        <a
+        href="https://form.jotform.com/261781539510459"
+        target="_blank"
+        class="reservation-btn">
+
+            Open Reservation Form
+
+        </a>
+
+        <small>
+            Secure online reservation powered by Jotform
+        </small>
 
     </div>
 
-    <div class="reservation-right">
+</div>
 
-      <div class="reservation-form">
-
-        <input type="text" id="resName" placeholder="Your Name">
-        <input type="email" id="resEmail" placeholder="Your Email">
-
-        <input type="tel" id="resPhone" placeholder="Phone Number">
-        <input type="date" id="resDate">
-
-        <input type="time" id="resTime">
-
-        <select id="resGuests">
-          <option>1 Guest</option>
-          <option>2 Guests</option>
-          <option>4 Guests</option>
-          <option>6 Guests</option>
-          <option>8+ Guests</option>
-        </select>
-
-        <textarea
-          id="resMessage"
-          placeholder="Special Request"
-        ></textarea>
-
-        <button class="btn" onclick="bookTable()">
-          Reserve Table
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
+<!-- =========================================
+     QR RESERVATION CARD END
+========================================= -->
 
 </section>
 
