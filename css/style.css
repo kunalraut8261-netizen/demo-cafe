@@ -1501,3 +1501,34 @@ footer {
     background:#8d0018;
 
 }
+
+/* ======================================
+   FORM GROUP
+====================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#555;
+
+    margin-bottom:8px;
+
+}
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+}

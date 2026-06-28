@@ -213,68 +213,49 @@
 
 <div class="reservation-form">
 
-    <h3>Reserve Your Table</h3>
+  <!-- NAME -->
+<div class="form-group">
+    <label>Your Name</label>
+    <input type="text" id="resName">
+</div>
 
-    <p>
-        Fill in your details and we'll get back to you shortly.
-    </p>
+<!-- EMAIL -->
+<div class="form-group">
+    <label>Your Email</label>
+    <input type="email" id="resEmail">
+</div>
 
-    <input
-    type="text"
-    id="resName"
-    placeholder="Your Name">
+<!-- PHONE -->
+<div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" id="resPhone">
+</div>
 
-    <input
-    type="email"
-    id="resEmail"
-    placeholder="Your Email">
+<!-- DATE -->
+<div class="form-group">
+    <label>Select Date</label>
+    <input type="date" id="resDate">
+</div>
 
-    <input
-    type="tel"
-    id="resPhone"
-    placeholder="Phone Number">
+<!-- TIME -->
+<div class="form-group">
+    <label>Select Time</label>
+    <input type="time" id="resTime">
+</div>
 
-    <input
-    type="date"
-    id="resDate"
-    placeholder="Date">
-
-
-    <input
-    type="time"
-    id="resTime"
-    placeholder="Time">
-
-
-
-
-
-    <!-- GUEST -->
-    <div class="form-group">
+<!-- GUEST -->
+<div class="form-group">
     <label>Guests</label>
     <select id="resGuests">
 
         <option>1 Guest</option>
         <option>2 Guests</option>
-        <option>3 Guests</option>
         <option>4 Guests</option>
-        <option>5 Guests</option>
         <option>6 Guests</option>
-        <option>7 Guests</option>
         <option>8+ Guests</option>
 
     </select>
-
-    <textarea
-    id="resMessage"
-    placeholder="Special Request"></textarea>
-
-    <!-- FORM SUBMIT BUTTON -->
-<button
-class="reservation-submit-btn"
-onclick="bookTable()">
-  Reserve Table
-</button>
+</div>
 
 </div>
 
