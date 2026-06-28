@@ -285,3 +285,52 @@
     justify-self:center;
   }
 }
+
+
+
+/* =========================
+   INFO SECTION MOBILE SIZE FIX
+   Locate / Hours / Reservation
+========================= */
+
+@media (max-width: 600px){
+
+  /* Info section spacing कमी */
+  .info-row{
+    gap: 24px;
+    margin-bottom: 45px;
+  }
+
+  /* Icon + text row properly small */
+  .info-box{
+    gap: 16px;
+    align-items: center;
+  }
+
+  /* Icon circle size कमी */
+  .info-icon{
+    width: 58px;
+    height: 58px;
+  }
+
+  /* PNG icon size कमी */
+  .info-icon img{
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+  }
+
+  /* Heading size कमी */
+  .info-box h3{
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  /* Paragraph size कमी */
+  .info-box p{
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+}
