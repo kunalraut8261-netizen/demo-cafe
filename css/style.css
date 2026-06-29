@@ -652,6 +652,18 @@ footer {
   margin-left: auto;
 }
 
+
+/* ===== Hero Image Frame ===== */
+.arch-frame{
+    position: relative;
+    overflow: hidden;
+
+    /* Increase frame height */
+    height: 720px;   /* आधी 620px किंवा 650px असेल तर 720px कर */
+}
+
+
+
 /* ===== Hero / About Image ===== */
 .arch-frame img{
     width:100%;
